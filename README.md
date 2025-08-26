@@ -60,7 +60,7 @@ Gå till repot på GitHub
 
 3. Välj mappen på datorn där du vill ha projektet och klicka Create Project
 
-Nu laddas alla filer från GitHub ner till din dator
+Nu laddas alla filer från GitHub-repot ner till din dator
 
 
 
