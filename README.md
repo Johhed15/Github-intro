@@ -7,10 +7,6 @@
 </div>
 
 
-
-![](https://im14.inviewer.se/skiss/00/00CCA4MC46.png){width=2in style="display: block; margin-left: auto; margin-right: auto;"}
-
-
 # 1. Konfigurera Git på datorn
 
 
