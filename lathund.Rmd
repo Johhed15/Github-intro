@@ -43,7 +43,7 @@ git config --global user.email "hej123@mail.se"
 
 # 2. Koppla till ett befintligt GitHub-repo
 
-Starta med att göra en fork på repot så att den läggs in i dina repositories på github: 
+Starta med att göra en fork(om du inte äger repot) på repot så att den läggs in i dina repositories på github: 
 ![](fork.png){width=7in style="display: block; margin-left: auto; margin-right: auto;"}
 
 Ägaren av repot måste lägga till dig som samarbetare:
