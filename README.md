@@ -7,7 +7,7 @@
 </div>
 
 ```{html}
-# regionens bilder kan lätt importeras utan att laddas ned med: 
+# regionens bilder kan lätt importeras utan att laddas ned med tex: 
 
 <div align="center">
   <img src="https://im14.inviewer.se/skiss/00/00CCA4MC46.png" width="600" height="300"/>
