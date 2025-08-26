@@ -6,20 +6,6 @@
   <img src="https://im14.inviewer.se/skiss/00/00CCA4MC46.png" width="600" height="300"/>
 </div>
 
----
-title: "GitHub Introduktion – Lathund"
-author: "Johannes Hedström"
-date: "`r Sys.Date()`"
-output:
-  word_document:
-  pdf_document:
-geometry: top=100pt,bottom=100pt,left=68pt,right=66pt
-fontsize: 12pt
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, eval=FALSE)
-```
 
 
 ![](https://im14.inviewer.se/skiss/00/00CCA4MC46.png){width=2in style="display: block; margin-left: auto; margin-right: auto;"}
