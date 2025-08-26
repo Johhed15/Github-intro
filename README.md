@@ -40,6 +40,12 @@ git config --global user.email "hej123@mail.se"
 
 # 2. Koppla till ett befintligt GitHub-repo
 
+Starta med att göra en fork(om du inte äger repot) på repot så att den läggs in i dina repositories på github: 
+<div align="center">
+  <img src="fork.png" width="600" height="300"/>
+</div>
+
+
 Ägaren av repot måste lägga till dig som samarbetare:
 
 Gå till repot på GitHub  
@@ -63,12 +69,6 @@ Nu laddas alla filer från GitHub-repot ner till din dator
 
 
 # 3. Ändra och ladda upp filer 
-
-Starta med att göra en fork(om du inte äger repot) på repot så att den läggs in i dina repositories på github: 
-<div align="center">
-  <img src="fork.png" width="600" height="300"/>
-</div>
-
 
 
 Detta steg förutsätter att du är i ett R-project
