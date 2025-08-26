@@ -66,6 +66,7 @@ Gå till repot på GitHub
 
 Nu laddas alla filer från GitHub-repot ner till din dator
 
+README filen som skapas är "presentationen" för repot och beroende på vad repot ska användas till så används den ofta till att beskriva hur funktionerna/filerna i repot används och fungerar.
 
 
 # 3. Ändra och ladda upp filer 
