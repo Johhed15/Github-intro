@@ -40,8 +40,6 @@ git config --global user.email "hej123@mail.se"
 
 # 2. Koppla till ett befintligt GitHub-repo
 
-
-
 Ägaren av repot måste lägga till dig som samarbetare:
 
 Gå till repot på GitHub  
@@ -85,7 +83,7 @@ Detta steg förutsätter att du är i ett R-project
 ## Alternativt via terminal
 
 ```{r}
-git add . # punkten betyder alla ändringar i alla filer, byt mot scriptnam.R för specifik fil
+git add . # punkten betyder alla ändringar i nuvarande mapp och undermappar, byt mot scriptnam.R för specifik fil
 git commit -m "Kort beskrivning av ändringar"
 git push
 
@@ -139,7 +137,7 @@ git status
 git log --oneline --graph --all
 
 # Ångra ändringar innan commit
-git checkout -- <filnamn>
+git checkout -- <filnamn> # <filnamn> = vald fil
 
 # Ta bort filer från Git men behåll lokalt
 git rm --cached <filnamn>
@@ -168,9 +166,13 @@ git log --oneline --graph # är bra för att visualisera historiken.
 # Backa hela projectet till specific commit
 git revert <commit-hash> #  <commit-hash> == referens till specific commit
 
-# om det inte räcker: tar bort alla lokala ändringar som ej är comittade
+# om det inte räcker: tar bort alla lokala ändringar som ej är comittade, ej comittade ändringar raderas permanent!!
 git reset --hard <commit-hash>
 
+git clone <url>          # Klona ett repo första gången
+git stash               # Spara temporära ändringar
+git stash pop           # Återställ sparade ändringar
+git diff               # Se ändringar innan commit
 ```
 
 
@@ -188,9 +190,10 @@ git reset --hard <commit-hash>
 ### Alternativ 2: Via terminal
 
 ```{r}
-git checkout main
+
+git checkout main # byt branch till main
 git pull           # Hämta senaste main
-git merge ny-funktion
+git merge ny-funktion # slår ihop ändringar från branchen "ny-funktion"
 ```
 
 
@@ -201,7 +204,7 @@ git merge ny-funktion
 - Lägg till filen och committa merge:
 
 ```{r}
-git add <filnamn> # <filnamn> = vald fil
+git add <filnamn> 
 git commit
 
 ```
@@ -219,8 +222,6 @@ git push
 Git visar konflikter med markeringar i filerna:
 
 ```{r}
-
-
 <<<<<<< HEAD
 din kod
 =======
@@ -235,7 +236,6 @@ annans kod
 git add <filnamn>
 git commit
 
-\newpage
 
 # Tips för teamsamarbete
 
@@ -244,7 +244,6 @@ git commit
 - Använd små, tydliga commits → lättare att läsa historik och merga
 
 - Kommunicera i teamet om ändringar som påverkar samma filer
-
 
 
 
