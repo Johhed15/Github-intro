@@ -43,6 +43,7 @@ git config --global user.email "hej123@mail.se"
 
 
 Ägaren av repot måste lägga till dig som samarbetare:
+
 Gå till repot på GitHub  
 ➡ Klicka på **Settings**  
 ➡ Välj **Collaborators**  
