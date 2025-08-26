@@ -33,9 +33,7 @@ git config --global user.email "hej123@mail.se"
 
 - Kontrollera inställningarna med git config --list
 
-- Om du får felmeddelandet "fatal: not in a git repository",
-
-- betyder det att du inte är i ett Git-repo.
+- Om du får felmeddelandet "fatal: not in a git repository", betyder det att du inte är i ett Git-repo.
 
 - Gå till mappen med cd <mappnamn> eller skapa ett nytt repo med git init
 
