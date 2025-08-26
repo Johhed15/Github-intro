@@ -84,7 +84,7 @@ Detta steg förutsätter att du är i ett R-project
 ## Alternativt via terminal
 
 ```{r}
-git add .
+git add . # punkten betyder alla ändringar i alla filer, byt mot scriptnam.R för specifik fil
 git commit -m "Kort beskrivning av ändringar"
 git push
 
@@ -200,7 +200,7 @@ git merge ny-funktion
 - Lägg till filen och committa merge:
 
 ```{r}
-git add <filnamn>
+git add <filnamn> # <filnamn> = vald fil
 git commit
 
 ```
@@ -243,5 +243,8 @@ git commit
 - Använd små, tydliga commits → lättare att läsa historik och merga
 
 - Kommunicera i teamet om ändringar som påverkar samma filer
+
+
+
 
 
