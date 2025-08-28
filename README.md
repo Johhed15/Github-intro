@@ -36,7 +36,7 @@ git config --global user.email "hej123@mail.se"
 
 Fyll här i relevant information och skapa de filerna du vill ha (allt går att ändra i efterhand).
 
-**När du skapar ett repo på Github eller genom Rstudio så finns valet att skapa en .gitignore - fil, i denna fil ska alltid *.Rproj alltid skrivas, detta gör att Rproj- filen på datorn inte laddas upp till github utan behålls lokalt.**
+**När du skapar ett repo på Github eller genom Rstudio så finns valet att skapa en .gitignore - fil, i denna fil ska alltid '*.Rproj' alltid skrivas, detta gör att Rproj- filen på datorn inte laddas upp till github utan behålls lokalt.**
 
 
 README filen som skapas är "presentationen" för repot och beroende på vad repot ska användas till så är den ofta till att för beskriva hur funktionerna/filerna i repot används och fungerar.
