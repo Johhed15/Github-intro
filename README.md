@@ -37,13 +37,15 @@ git config --global user.email "hej123@mail.se"
 
 # 2.1 Skapa ett repo på github
 
-
-**När du skapar ett repo på Github eller genom Rstudio så finns valet att skapa en .gitinore - fil, i denna fil ska alltid *.Rproj alltid skrivas, detta gör att Rproj- filen på datorn inte laddas upp till github utan behålls lokalt.**
-
+Öppna github i webbläsaren och klicka in på Your repositorys och skapa ett nytt, då går du vidare till denna sida:
 
 <div align="center">
   <img src="create_repo.png" width="800" height="800"/>
 </div>
+
+Fyll här i relevant information och skapa de filerna du vill ha (allt går att ändra i efterhand).
+
+**När du skapar ett repo på Github eller genom Rstudio så finns valet att skapa en .gitinore - fil, i denna fil ska alltid *.Rproj alltid skrivas, detta gör att Rproj- filen på datorn inte laddas upp till github utan behålls lokalt.**
 
 
 # 2.2 Koppla till ett befintligt GitHub-repo
@@ -194,6 +196,17 @@ git diff               # Se ändringar innan commit
 
 
 ## konflikt när flera jobbar i samma repo och merge behövs
+
+Ändringar har gjort lokalt, men samma fil i repositoryn har ändrats sedan den senaste "pullen" och detta fel dyker upp: 
+
+<div align="center">
+  <img src="git_push_fail.png" width="800" height="800"/>
+</div>
+
+Tryck då på pull för att se de senaste ändringarna, 
+
+
+
 
 ### Alternativ 1: Via GitHub (pull request)
 
