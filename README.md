@@ -16,7 +16,6 @@
 
 # 1. Konfigurera Git på datorn
 
-
 Innan du kan använda Git behöver du koppla det till ditt GitHub-konto:
 
 ```{r}
