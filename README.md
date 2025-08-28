@@ -138,7 +138,7 @@ Git visar konflikter med markeringar i filerna:
 din kod
 =======
 annans kod
->>>>>>> ny-funktion
+>>>>>>> 
 ```
 
 - Lös konflikten genom att ta bort markeringarna och behålla rätt kod
