@@ -44,7 +44,10 @@ git config --global user.email "hej123@mail.se"
 
 Fyll här i relevant information och skapa de filerna du vill ha (allt går att ändra i efterhand).
 
-**När du skapar ett repo på Github eller genom Rstudio så finns valet att skapa en .gitinore - fil, i denna fil ska alltid *.Rproj alltid skrivas, detta gör att Rproj- filen på datorn inte laddas upp till github utan behålls lokalt.**
+**När du skapar ett repo på Github eller genom Rstudio så finns valet att skapa en .gitignore - fil, i denna fil ska alltid *.Rproj alltid skrivas, detta gör att Rproj- filen på datorn inte laddas upp till github utan behålls lokalt.**
+
+
+README filen som skapas är "presentationen" för repot och beroende på vad repot ska användas till så är den ofta till att för beskriva hur funktionerna/filerna i repot används och fungerar.
 
 
 # 2.2 Koppla till ett befintligt GitHub-repo
@@ -75,8 +78,6 @@ Gå till repot på GitHub
 
 Nu laddas alla filer från GitHub-repot ner till din dator
 
-README filen som skapas är "presentationen" för repot och beroende på vad repot ska användas till så används den ofta till att beskriva hur funktionerna/filerna i repot används och fungerar.
-
 
 # 3. Ändra och ladda upp filer 
 
@@ -100,7 +101,7 @@ Detta steg förutsätter att du är i ett R-project
 ## Alternativt via terminal
 
 ```{r}
-git add . # punkten betyder alla ändringar i nuvarande mapp och undermappar, byt mot scriptnam.R för specifik fil
+git add . # punkten betyder alla ändringar i nuvarande mapp och undermappar, byt mot scriptnamn.R för specifik fil
 git commit -m "Kort beskrivning av ändringar"
 git push
 
@@ -114,28 +115,51 @@ Vanliga fel och lösningar:
 
 - fatal: not a git repository → Du är inte i ett repo → Navigera till rätt mapp eller skapa repo med git init
 
+# 4. Konflikt när flera jobbar i samma repo och merge behövs
+
+Ändringar har gjort lokalt, men samma fil i repositoryn har ändrats sedan den senaste "pullen" och detta fel dyker upp: 
+
+<div align="center">
+  <img src="git_push_fail.png" width="800" height="800"/>
+</div>
+
+Tryck då på pull för att se de senaste ändringarna, om en merge conlict upstår kommer raderna som skapr konflikten att markeras och du måste manuellt då ändrå så att det blir rätt: 
 
 
-# 4. Skapa ett nytt Quarto Website-repo
+<div align="center">
+  <img src="merge_conlict_rad.png" width="800" height="800"/>
+</div>
 
 
-I RStudio: New Project → New Directory → Quarto Website
+Git visar konflikter med markeringar i filerna:
 
-Fyll i:
+```{r}
+<<<<<<< HEAD
+din kod
+=======
+annans kod
+>>>>>>> ny-funktion
+```
 
-- Namn på projektet
+- Lös konflikten genom att ta bort markeringarna och behålla rätt kod
 
-- Plats på datorn
+- Lägg till filen och committa merge:
 
-- Klicka i Create a Git repository
+När de röda raderna är borta går så ska det gå att köra push!
 
-Nu kan du använda Git precis som ovan för att versionhantera din Quarto-webbplats
+## Tips för teamsamarbete
+
+- Pull ofta innan du börjar jobba → mindre risk för konflikter
+
+- Använd små, tydliga commits → lättare att läsa historik och merga
+
+- Kommunicera i teamet om ändringar som påverkar samma filer
 
 
 
 # 5. Generella tips
 
-**När du skapar ett repo på Github eller genom Rstudio så finns valet att skapa en .gitinore - fil, i denna fil ska alltid *.Rproj alltid skrivas, detta gör att Rproj- filen på datorn inte laddas upp till github utan behålls lokalt.**
+**När du skapar ett repo på Github eller genom Rstudio så finns valet att skapa en .gitignore - fil, i denna fil ska alltid *.Rproj alltid skrivas, detta gör att Rproj- filen på datorn inte laddas upp till github utan behålls lokalt.**
 
 - Använd .gitignore: Lägg till filer du inte vill versionhantera (t.ex. stora dataset, temporära filer)
 
@@ -194,84 +218,23 @@ git diff               # Se ändringar innan commit
 
 
 
-## konflikt när flera jobbar i samma repo och merge behövs
-
-Ändringar har gjort lokalt, men samma fil i repositoryn har ändrats sedan den senaste "pullen" och detta fel dyker upp: 
-
-<div align="center">
-  <img src="git_push_fail.png" width="800" height="800"/>
-</div>
-
-Tryck då på pull för att se de senaste ändringarna, 
 
 
+# 6. Skapa ett nytt Quarto Website-repo
 
 
-### Alternativ 1: Via GitHub (pull request)
+I RStudio: New Project → New Directory → Quarto Website
 
-- Gå till GitHub → ditt repo → “Pull Requests” → “New Pull Request”
+Fyll i:
 
-- Välj din branch och main/master som bas
+- Namn på projektet
 
-- Skapa pull request → GitHub visar eventuella konflikter → merge när allt är klart
+- Plats på datorn
 
-### Alternativ 2: Via terminal
+- Klicka i Create a Git repository
 
-```{r}
+Nu kan du använda Git precis som ovan för att versionhantera din Quarto-webbplats
 
-git checkout main # byt branch till main
-git pull           # Hämta senaste main
-git merge ny-funktion # slår ihop ändringar från branchen "ny-funktion"
-```
-
-
-- Om det uppstår konflikter måste du redigera filerna manuellt
-
-- Ta bort konfliktmarkeringarna och behåll rätt kod
-
-- Lägg till filen och committa merge:
-
-```{r}
-git add <filnamn> 
-git commit
-
-```
-
-- Push:a sedan main till remote:
-
-```{r}
-git push
-```
-
-
-
-# 4. Konflikter
-
-Git visar konflikter med markeringar i filerna:
-
-```{r}
-<<<<<<< HEAD
-din kod
-=======
-annans kod
->>>>>>> ny-funktion
-```
-
-
-- Lös konflikten genom att ta bort markeringarna och behålla rätt kod
-- Kör sedan:
-
-git add <filnamn>
-git commit
-
-
-# Tips för teamsamarbete
-
-- Pull ofta innan du börjar jobba → mindre risk för konflikter
-
-- Använd små, tydliga commits → lättare att läsa historik och merga
-
-- Kommunicera i teamet om ändringar som påverkar samma filer
 
 
 
