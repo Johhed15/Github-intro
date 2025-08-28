@@ -28,7 +28,7 @@ git config --global user.email "hej123@mail.se"
 
 # 2.1 Skapa ett repo på github
 
-Öppna github i webbläsaren och klicka in på Your repositorys och skapa ett nytt, då går du vidare till denna sida:
+Öppna github i webbläsaren och klicka in på "Your repositories" och skapa ett nytt, då går du vidare till denna sida:
 
 <div align="center">
   <img src="create_repo.png" width="800" height="800"/>
@@ -82,7 +82,7 @@ Detta steg förutsätter att du är i ett R-project
 
 2. I fliken Git:
 
-   - Markera de filer du vill ladda upp
+   - Markera de filer du vill ladda upp (är det många så använd använd shift för att markera alla)
    
    - Klicka Commit
    
