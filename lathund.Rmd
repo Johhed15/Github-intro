@@ -130,7 +130,7 @@ Vanliga fel och lösningar:
 
 ![](git_push_fail.png){width=7in style="display: block; margin-left: auto; margin-right: auto;"}
 
-Tryck då på pull för att se de senaste ändringarna, om en merge conlict upstår kommer raderna som skapr konflikten att markeras och du måste manuellt då ändrå så att det blir rätt: 
+Tryck då på pull för att se de senaste ändringarna, om en merge conlict uppstår kommer raderna som skapar konflikten att markeras och du måste manuellt då ändra så att det blir rätt: 
 
 
 ![](merge_conlict_rad.png){width=7in style="display: block; margin-left: auto; margin-right: auto;"}

@@ -115,7 +115,7 @@ Vanliga fel och lösningar:
   <img src="git_push_fail.png" width="800" height="800"/>
 </div>
 
-Tryck då på pull för att se de senaste ändringarna, om en merge conlict uppstår kommer raderna som skapr konflikten att markeras och du måste manuellt då ändrå så att det blir rätt: 
+Tryck då på pull för att se de senaste ändringarna, om en merge conlict uppstår kommer raderna som skapar konflikten att markeras och du måste manuellt då ändra så att det blir rätt: 
 
 
 <div align="center">
