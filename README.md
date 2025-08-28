@@ -46,10 +46,8 @@ git config --global user.email "hej123@mail.se"
   <img src="create_repo.png" width="800" height="800"/>
 </div>
 
-# 2. Koppla till ett befintligt GitHub-repo
-=======
+
 # 2.2 Koppla till ett befintligt GitHub-repo
->>>>>>> 391a747ae31572fbc0dfc7d6c7b2736005665d8d
 
 Starta med att göra en fork(om du inte äger repot) på repot så att den läggs in i dina repositories på github: 
 <div align="center">
