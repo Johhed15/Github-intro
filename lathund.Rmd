@@ -144,7 +144,7 @@ Git visar konflikter med markeringar i filerna:
 din kod
 =======
 annans kod
->>>>>>> ny-funktion
+>>>>>>>
 ```
 
 
