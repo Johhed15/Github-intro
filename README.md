@@ -13,9 +13,9 @@
 
 ```
 
-FEl
+
 # 1. Konfigurera Git på datorn
-FEL
+
 
 Innan du kan använda Git behöver du koppla det till ditt GitHub-konto:
 
