@@ -35,10 +35,13 @@ git config --global user.email "hej123@mail.se"
 
 - Gå till mappen med cd <mappnamn> eller skapa ett nytt repo med git init
 
+# 2.1 Skapa ett repo på github
 
 
+**När du skapar ett repo på Github eller genom Rstudio så finns valet att skapa en .gitinore - fil, i denna fil ska alltid *.Rproj alltid skrivas, detta gör att Rproj- filen på datorn inte laddas upp till github utan behålls lokalt.**
 
-# 2. Koppla till ett befintligt GitHub-repo
+
+# 2.2 Koppla till ett befintligt GitHub-repo
 
 Starta med att göra en fork(om du inte äger repot) på repot så att den läggs in i dina repositories på github: 
 <div align="center">
