@@ -153,7 +153,7 @@ När de röda raderna är borta går så ska det gå att köra push!
 
 **När du skapar ett repo på Github eller genom Rstudio så finns valet att skapa en .gitignore - fil, i denna fil ska alltid '*.Rproj' alltid skrivas, detta gör att Rproj- filen på datorn inte laddas upp till github utan behålls lokalt.**
 
-- Använd .gitignore: Lägg till filer du inte vill versionhantera (t.ex. stora dataset, temporära filer)
+- Använd .gitignore: Lägg till filer du inte vill versionhantera (t.ex. stora dataset, temporära filer, filer som inte får läggas upp på git)
 
 - Commit ofta: Små, tydliga commits gör det lättare att felsöka
 
