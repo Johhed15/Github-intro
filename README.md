@@ -82,7 +82,7 @@ Detta steg förutsätter att du är i ett R-project
 
 2. I fliken Git:
 
-   - Markera de filer du vill ladda upp (är det många så använd använd shift för att markera alla)
+   - Markera de filer du vill ladda upp (är det många så använd shift för att markera alla)
    
    - Klicka Commit
    
@@ -109,7 +109,7 @@ Vanliga fel och lösningar:
 
 # 4. Konflikt när flera jobbar i samma repo och merge behövs
 
-Ändringar har gjort lokalt, men samma fil i repositoryn har ändrats sedan den senaste "pullen" och detta fel dyker upp: 
+Ändringar har gjorts lokalt, men samma fil i repositoryn har ändrats sedan den senaste "pullen" och detta fel dyker upp: 
 
 <div align="center">
   <img src="git_push_fail.png" width="800" height="800"/>
